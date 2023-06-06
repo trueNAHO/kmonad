@@ -53,7 +53,7 @@
   include at least an 'input' field and an 'output' field. These describe how
   KMonad captures its inputs and how it emits its outputs.
 
-  First, let's go over the optional, non-OS specific settings. Currently there is
+  First, let's go over the optional, non-OS specific settings. Currently there are
   only 2:
 
   - fallthrough: `true` or `false`, defaults to `false`
