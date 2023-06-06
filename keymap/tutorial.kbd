@@ -53,8 +53,8 @@
   include at least an 'input' field and an 'output' field. These describe how
   KMonad captures its inputs and how it emits its outputs.
 
-  First, let's go over the optional, non-OS specific settings. Currently there are
-  only 2:
+  First, let's go over the optional, non-OS specific settings. Currently there
+  are only 2:
 
   - fallthrough: `true` or `false`, defaults to `false`
 
@@ -126,7 +126,8 @@
   SendEvent API to emit key events directly to Windows. Since these are
   'artificial' events we won't end up catching them again by the
   `low-level-hook`. It is very likely that KMonad does not play well with other
-  programs that capture keyboard input like AHK. You specify windows output using:
+  programs that capture keyboard input like AHK. You specify windows output
+  using:
     (send-event-sink)
 
   Specific to Windows, KMonad also handles key auto-repeat.  Therefore your
@@ -397,7 +398,8 @@
     C-RC-RA-A-M-S-RS-m ;; Sure, but why would you?
 
   Also, note that although we provide special syntax for certain modifiers,
-  these buttons are in no way 'special' in KMonad. There is no concept of 'modifier'.
+  these buttons are in no way 'special' in KMonad. There is no concept of
+  'modifier'.
     (around a (around b c)) ;; Perfectly valid
 
   -------------------------------------------------------------------------- |#
@@ -782,7 +784,8 @@
     (tap-next-press x lsft)
   Then:
     Tesc Ta -> xa
-    Pa Pesc Ra Resc -> ax (because esc is released before another key is pressed)
+    Pa Pesc Ra Resc -> ax (because esc is released before another key is
+                           pressed)
     Pesc Pa Resc Ra -> A (because a is pressed before esc is released)
     Pesc Ta Resc    -> A (a is pressed before esc is released here as well)
 
